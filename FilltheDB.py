@@ -16,9 +16,9 @@ client=MongoClient('mongodb://localhost:27017/Tp_Photos')
 db=client.DB_Photos
 collection=db.collection_edge
 
-directory='D:/aim/Elastic search'
+directory='D:/aim/tp search/static'
 dir_edge = 'eh_descriptors'
-dir_text = 'ht_descriptors'
+
 table_edge=[]
 with open(directory+'/'+dir_edge+ '/'+'eh'+str(1)+'.txt','r') as f:
     lines = f.readlines()

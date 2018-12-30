@@ -50,16 +50,12 @@ def index():
             similar_picture.append({"result":result,"index":cluster_picture_edge[k]["index"]})
         similar_picture=sorted(similar_picture,key=lambda x:x["result"])
         #path='C:/Users/Rami/Desktop/tp/Image-to-Image-search-master/static/img/'
-        path='/static/img/'
+        path='/static/img/0'
         answers =[] 
         for j in range(1,len(similar_picture)):
             if (j == 6): break
-            second = similar_picture[j]["index"] % 10000
-            first=int((similar_picture[j]["index"]-second)/10000)
-            #im=Image.open(path+str(first)+'/'+str(similar_picture[j]["index"])+'.jpg')
-            answers.append([path+str(first)+'/'+str(similar_picture[j]["index"])+'.jpg',' '])
-            #plt.imshow(im)
-            #plt.show()
+            answers.append([path+'/'+str(similar_picture[j]["index"])+'.jpg',' '])
+
         print(answers)
         
 
