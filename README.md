@@ -42,4 +42,4 @@ To Use : <br/>
 - In fillwithDB.py change D:/aim/tp search/static/eh_descriptors/ehi.txt (i in x) to your where about files. <br/>
 - Start FillwithDB.py at first to fill the MongoDB (You'll find the name of the Database in the file). <br/>
 - Now that the MongoDB has the path of the images and it's Edge Histogram , Start StartMe.py. <br/>
-- Now go to the browser and enter : http://localhost:50000.
+- Now go to the browser and enter : http://localhost:5000.
