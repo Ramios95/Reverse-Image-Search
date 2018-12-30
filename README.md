@@ -33,13 +33,13 @@ Uses MongoDB as it's search engine(can Be configured to use Elasticsearch instea
 
 # Files:
 
-FilltheDB.py : Parses the static/img/ folder, indexes images and their descriptions in the MongoDB (or Elasticsearch) server<br/>
-StartMe.py : launches the webapp to do the reverse image search (Webapp) [ http://localhost:5000 ]<br/>
+FilltheDB.py : Parses the eh files in the MongoDB  (or Elasticsearch) with their indexes and clusters. <br/>
+StartMe.py : launches the webapp to do the reverse image search (Webapp) [ http://localhost:5000 ]. <br/>
 
 # How To Use :
 
 To Use : <br/>
 - In fillwithDB.py change D:/aim/tp search/static/eh_descriptors/ehi.txt (i in x) to your where about files. <br/>
 - Start FillwithDB.py at first to fill the MongoDB (You'll find the name of the Database in the file). <br/>
-- Now that the MongoDB has the path of the images and it's Edge Histogram , Start server.py <br/>
-- Now go to the browser and enter : http://localhost:50000
+- Now that the MongoDB has the path of the images and it's Edge Histogram , Start StartMe.py. <br/>
+- Now go to the browser and enter : http://localhost:50000.
