@@ -16,8 +16,6 @@ from scipy.spatial import distance as dist
 import matplotlib.pyplot as plt 
 os.environ['CUDA_VISIBLE_DEVICES'] = ''
 
-def index_data():
-    return 0;
     
 def calcDistance(pic1,pic2):
     result=float(0)
@@ -66,8 +64,5 @@ def index():
         return render_template('index.html')
 
 if __name__=="__main__":
-    try:
-        index_data()
-    except Exception as e:
-        pass
+
     app.run("127.0.0.1", debug=False)
