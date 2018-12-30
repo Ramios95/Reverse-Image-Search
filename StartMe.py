@@ -21,7 +21,7 @@ def calcDistance(pic1,pic2):
     result=float(0)
     for i in range(0,len(pic1)):
         result+=(float(pic1[i])-float(pic2[i]))**2
-    #dist.euclidean(pic1, pic2)
+    
     return result
 
 app = Flask(__name__)
@@ -47,7 +47,7 @@ def index():
             result=calcDistance(cluster_picture_edge[0]["edge_value"],cluster_picture_edge[k]["edge_value"])
             similar_picture.append({"result":result,"index":cluster_picture_edge[k]["index"]})
         similar_picture=sorted(similar_picture,key=lambda x:x["result"])
-        #path='C:/Users/Rami/Desktop/tp/Image-to-Image-search-master/static/img/'
+        
         path='/static/img/0'
         answers =[] 
         for j in range(1,len(similar_picture)):

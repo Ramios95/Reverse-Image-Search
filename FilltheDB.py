@@ -36,4 +36,4 @@ for k in range(0,10000):
     cluster=str(Clusters[k])
     line_DB={"index":k,"edge_value":table_edge[k],"cluster":cluster}
     collection.insert_one(line_DB)
-    print(k)
+    
