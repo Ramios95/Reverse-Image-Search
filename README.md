@@ -6,13 +6,13 @@
 # Search by image: 
 
 Give it an image and it will return the similar images based on the images in the database using **Edge Histogram Distance**.<br/>
-Uses MongoDB as it's search engine(can Be configured to use Elasticsearch instead).<br/>
+Uses MongoDB as it's search engine.<br/>
 
 
 # Packages Required: <br/>
 - Anaconda <br/>
 - Keras with Tensorflow Backend (Python 3.6) <br/>
-- (MongoDB and pymongo or Elastic Search and elasticsearch-py (Elastic Search 6.0) ) <br/>
+- (MongoDB and pymongo) <br/>
 
 
 # Output<br/>
@@ -33,7 +33,7 @@ Uses MongoDB as it's search engine(can Be configured to use Elasticsearch instea
 
 # Files:
 
-FilltheDB.py : Parses the eh files in the MongoDB  (or Elasticsearch) with their indexes and clusters. <br/>
+FilltheDB.py : Parses the eh files in the MongoDB with their indexes and clusters. <br/>
 StartMe.py : launches the webapp to do the reverse image search (Webapp) [ http://localhost:5000 ]. <br/>
 
 # How To Use :
